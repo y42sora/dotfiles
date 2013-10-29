@@ -1,0 +1,28 @@
+
+"-------------------------------------------------------------------------------
+" キー配列の再設定
+"-------------------------------------------------------------------------------
+
+"----
+"dovrak配列用
+"---
+noremap c gk
+"up
+noremap t gj
+"down
+noremap h h
+"left
+noremap n l
+"right
+noremap r w
+"next word
+noremap g b
+"before word
+noremap d 0
+"line start
+noremap s $
+"line end
+noremap <Space> :
+
+
+
