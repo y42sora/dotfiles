@@ -1,4 +1,4 @@
 source .vim/.vimrc.basic
 source .vim/.vimrc.gui
-source .vimrc.keys
-source .vimrc.vundle
+source .vim/.vimrc.keys
+source .vim/.vimrc.vundle
