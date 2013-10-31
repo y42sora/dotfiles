@@ -1,11 +1,19 @@
 " qfixappにruntimepathを通す(パスは環境に合わせてください)
- set runtimepath+=~/.vim/bundle/qfixapp
-"
+set runtimepath+=~/.vim/bundle/qfixapp
+
+
 " " キーマップリーダー
 let QFixHowm_Key = 'l'
 "
 " " howm_dirはファイルを保存したいディレクトリを設定
-let howm_dir             = '~/a_files/dropbox/Data/text/howm'
+
+if has('win32') || has('win64')
+  let howm_dir           = 'E:/Dropbox/Data/text/howm'
+else
+  let howm_dir           = '~/a_files/dropbox/Data/text/howm'
+endif
+
 let howm_filename        = '%Y/%m/%Y-%m-%d.txt'
 let howm_fileencoding    = 'utf-8'
 let howm_fileformat      = 'unix'
+
