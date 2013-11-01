@@ -1,5 +1,8 @@
+[init]
+	templatedir = $HOME/.git_template
+
 [include]
-	path = ~/.gitconfig.local
+	path = $HOME/.gitconfig.local
 
 [core]
 	excludesfile = $HOME/.gitignore_global
