@@ -41,7 +41,11 @@ Bundle 'h1mesuke/unite-outline'
 Bundle 'basyura/bitly.vim'
 Bundle 'Shougo/unite.vim'
 
-" " …
+" 自動保存
+Bundle 'vim-scripts/vim-auto-save'
+" デフォルトで有効にする
+let g:auto_save = 1
+
 filetype plugin indent on     " required!
 " "
 " " Brief help
