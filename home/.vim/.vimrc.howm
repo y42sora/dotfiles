@@ -18,4 +18,5 @@ let howm_fileencoding    = 'utf-8'
 let howm_fileformat      = 'unix'
 
 let QFixHowm_Wiki = 1
+let QFixHowm_MenuKey = 0
 
