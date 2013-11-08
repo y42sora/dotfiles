@@ -41,6 +41,12 @@ Bundle 'h1mesuke/unite-outline'
 Bundle 'basyura/bitly.vim'
 Bundle 'Shougo/unite.vim'
 
+" iOS開発
+"Bundle 'cocoa.vim'
+
+" 補完
+Bundle 'neocomplcache'
+
 " 自動保存
 Bundle 'vim-scripts/vim-auto-save'
 " デフォルトで有効にする
