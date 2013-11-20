@@ -59,6 +59,7 @@ Bundle 'vim-scripts/bufkill.vim'
 ":bdがbufkillのBDを実行するようにする
 "http://qiita.com/kentaro/items/c3f7fc1d1be0e106735b
 Bundle 'tyru/vim-altercmd'
+call altercmd#load()
 AlterCommand bd BD
 AlterCommand BD bd
 
