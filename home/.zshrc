@@ -67,6 +67,8 @@ zstyle ':vcs_info:*' actionformats '(%s)-[%b]' '%m' '<!%a>'
 zstyle ':vcs_info:(svn|bzr):*' branchformat '%b:r%r'
 zstyle ':vcs_info:bzr:*' use-simple true
 
+# hubを入れてるとgitでhubが呼ばれるので表示用にはgitを呼ぶように指定
+zstyle ':vcs_info:git:*:-all-' command /usr/bin/git
 
 if is-at-least 4.3.10; then
     # git 用のフォーマット
@@ -225,6 +227,11 @@ add-zsh-hook precmd _update_vcs_info_msg
 export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
 alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+
+# hub用
+# brew install hub
+
+function git(){hub "$@"} # zsh
 
 
 
