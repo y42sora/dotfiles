@@ -1,3 +1,5 @@
+= " qfixappにruntimepathを通す(パスは環境に合わせてください)
+[2013-11-29 09:16]
 " qfixappにruntimepathを通す(パスは環境に合わせてください)
 set runtimepath+=~/.vim/qfixapp
 
@@ -19,4 +21,11 @@ let howm_fileformat      = 'unix'
 
 let QFixHowm_Wiki = 1
 let QFixHowm_MenuKey = 0
+
+" クイックメモの追加
+let QFixHowm_QuickMemoFile = "quick_memo_0.howm"
+let QFixHowm_QuickMemoFile1 = "quick_memo_1.howm"
+let QFixHowm_QuickMemoFile2 = "quick_memo_2.howm"
+let QFixHowm_QuickMemoFile3 = "quick_memo_3.howm"
+let QFixHowm_QuickMemoFile4 = "quick_memo_4.howm"
 
