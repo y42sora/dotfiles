@@ -1,5 +1,5 @@
 = " qfixappにruntimepathを通す(パスは環境に合わせてください)
-[2013-11-29 09:16]
+[2013-12-02 23:18]
 " qfixappにruntimepathを通す(パスは環境に合わせてください)
 set runtimepath+=~/.vim/qfixapp
 
@@ -28,4 +28,6 @@ let QFixHowm_QuickMemoFile1 = "quick_memo_1.howm"
 let QFixHowm_QuickMemoFile2 = "quick_memo_2.howm"
 let QFixHowm_QuickMemoFile3 = "quick_memo_3.howm"
 let QFixHowm_QuickMemoFile4 = "quick_memo_4.howm"
+
+let QFixHowm_MenuRecent = 25
 
