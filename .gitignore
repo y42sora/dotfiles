@@ -1,4 +1,10 @@
 home/.vim/bundle/
 
-
 home/.vim/qfixapp
+home/.emacs.d/backup
+home/.emacs.d/elisp
+home/.emacs.d/elpa
+home/.emacs.d/el-get
+home/.emacs.d/url
+init-loader.el
+
