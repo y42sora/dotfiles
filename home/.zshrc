@@ -3,7 +3,9 @@ if [ -d ${HOME}/.rbenv  ] ; then
 	export PATH="${HOME}/.rbenv/bin:${HOME}/.rbenv/shims:${PATH}"
 	eval "$(rbenv init - zsh)"
 fi
-     
+
+# http://qiita.com/yaotti/items/157ff0a46736ec793a91
+setopt AUTO_CD
 
 case "`uname`" in
 	Darwin) # OSがMacならば
