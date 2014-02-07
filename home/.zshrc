@@ -38,10 +38,10 @@ autoload -U compinit
 compinit -u
 
 
-export NDK_ROOT="$HOME/a_files/bin/android/ndk"
-export ANDROID_SDK_ROOT="$HOME/a_files/bin/android/adt/sdk"
+export NDK_ROOT="$HOME/aa_files/bin/android/ndk"
+export ANDROID_SDK_ROOT="$HOME/aa_files/bin/android/adt/sdk"
 export V_TARGET_ID=1
-export ANDROID_SDK_PLATFORM_TOOLS="$HOME/a_files/bin/android/adt/sdk/platform-tools"
+export ANDROID_SDK_PLATFORM_TOOLS="$HOME/aa_files/bin/android/adt/sdk/platform-tools"
 
 export PATH=$PATH:$ANDROID_SDK_PLATFORM_TOOLS:$NDK_ROOT
 
