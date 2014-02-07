@@ -4,6 +4,9 @@
   '(
 	;; ここに使っているパッケージを書く。
 	open-junk-file
+	http-post-simple
+	org-toodledo
+	org-mode
 	))
 
 

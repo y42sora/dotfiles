@@ -15,3 +15,5 @@
 (require 'init-loader)
 (setq init-loader-show-log-after-init nil)
 (init-loader-load "~/.emacs.d/conf")
+(init-loader-load "~/aa_files/Dropbox/data/tools/emacs")
+

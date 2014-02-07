@@ -4,6 +4,9 @@ if [ -d ${HOME}/.rbenv  ] ; then
 	eval "$(rbenv init - zsh)"
 fi
 
+# nodebrew
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+
 # http://qiita.com/yaotti/items/157ff0a46736ec793a91
 setopt AUTO_CD
 
