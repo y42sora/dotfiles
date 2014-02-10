@@ -1,3 +1,4 @@
+
 ;; -*- Mode: Emacs-Lisp ; Coding: utf-8 -*-
 ;; ~/.emacs.d/site-lisp 以下全部読み込み
 (let ((default-directory (expand-file-name "~/.emacs.d/site-lisp")))
@@ -12,8 +13,30 @@
  (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
   )
 
+(add-to-list 'load-path "~/.emacs.d/el-get/el-get")
+
+
+;;; el-get
+;; 複数のソースからパッケージをインストールできるパッケージ管理システム
+;; 2012-03-15
+(add-to-list 'load-path "~/.emacs.d/el-get/el-get")
+(unless (require 'el-get nil t)
+  (with-current-buffer
+      (url-retrieve-synchronously
+       "https://raw.github.com/dimitri/el-get/master/el-get-install.el")
+    (end-of-buffer)
+    (eval-print-last-sexp)))
+;; レシピ置き場
+(add-to-list 'el-get-recipe-path
+             (concat (file-name-directory load-file-name) "/el-get/recipes"))
+;; 追加のレシピ置き場
+(add-to-list 'el-get-recipe-path
+             "~/.emacs.d/recipes")
+
+
 (require 'init-loader)
-(setq init-loader-show-log-after-init nil)
 (init-loader-load "~/.emacs.d/conf")
 (init-loader-load "~/aa_files/Dropbox/data/tools/emacs")
+
+
 

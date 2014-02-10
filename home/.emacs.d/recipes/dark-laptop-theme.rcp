@@ -1,6 +1,0 @@
-(:name dark-laptop-theme
-       :type http
-       :website "https://github.com/emacs-jp/replace-colorthemes"
-       :url "https://raw.github.com/emacs-jp/replace-colorthemes/master/dark-laptop-theme.el"
-       :post-init (add-to-list 'custom-theme-load-path default-directory))
-
