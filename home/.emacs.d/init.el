@@ -13,9 +13,6 @@
  (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
   )
 
-(add-to-list 'load-path "~/.emacs.d/el-get/el-get")
-
-
 ;;; el-get
 ;; 複数のソースからパッケージをインストールできるパッケージ管理システム
 ;; 2012-03-15
@@ -29,12 +26,26 @@
 ;; レシピ置き場
 (add-to-list 'el-get-recipe-path
              (concat (file-name-directory load-file-name) "/el-get/recipes"))
+
 ;; 追加のレシピ置き場
-(add-to-list 'el-get-recipe-path
-             "~/.emacs.d/recipes")
+
+(add-to-list 'el-get-recipe-path "~/.emacs.d/recipes")
+(el-get 'sync)
+
+;; Packages to install from el-get
+(defvar my/el-get-packages
+  '(
+    init-loader
+    org-toodledo
+    )
+  "A list of packages to install from el-get at launch.")
+
+(el-get 'sync my/el-get-packages)
+
 
 
 (require 'init-loader)
+(setq init-loader-show-log-after-init nil)
 (init-loader-load "~/.emacs.d/conf")
 (init-loader-load "~/aa_files/Dropbox/data/tools/emacs")
 

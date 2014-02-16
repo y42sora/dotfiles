@@ -1,0 +1,6 @@
+(:name org-toodledo
+               :type github
+               :description "org-toodledo.el"
+               :pkgname "christopherjwhite/org-toodledo"
+               :branch "master"
+               :compile nil)

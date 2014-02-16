@@ -1,0 +1,5 @@
+(:name init-loader
+               :type github
+               :description "init-loader.el"
+               :pkgname "emacs-jp/init-loader"
+               :branch "master")
