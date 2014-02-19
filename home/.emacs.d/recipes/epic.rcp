@@ -1,0 +1,6 @@
+(:name epic
+               :type github
+               :description "epic.el"
+               :pkgname "yoshinari-nomura/epic"
+               :branch "master"
+               :compile nil)

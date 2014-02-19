@@ -1,0 +1,6 @@
+(:name org
+               :type github
+               :description "org-mode"
+               :pkgname "emacsmirror/org"
+               :branch "master"
+               :compile nil)

@@ -1,0 +1,6 @@
+(:name orglue
+               :type github
+               :description "orglue.el"
+               :pkgname "yoshinari-nomura/orglue"
+               :branch "master"
+               :compile nil)
