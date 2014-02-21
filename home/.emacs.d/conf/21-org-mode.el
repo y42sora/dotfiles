@@ -7,7 +7,7 @@
 (require 'org-id)
 
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
-
+(define-key global-map "\C-ca" 'org-agenda)
 
 (defun browse-evernote-url (evernote-url)
   (let ()

@@ -1,0 +1,3 @@
+[submodule "home/.zsh.d/zsh-notify"]
+	path = home/.zsh.d/zsh-notify
+	url = git@github.com:marzocchi/zsh-notify.git
