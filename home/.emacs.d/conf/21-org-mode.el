@@ -27,3 +27,5 @@
 (defun org-evernote-open (path)
 (browse-evernote-url (concatenate 'string "evernote:" path)))
 
+
+(setq org-agenda-window-setup 'current-window) 

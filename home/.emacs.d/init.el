@@ -37,6 +37,7 @@
   '(
     init-loader
     org-toodledo
+    twittering-mode
     )
   "A list of packages to install from el-get at launch.")
 
@@ -48,3 +49,8 @@
 (init-loader-load "~/.emacs.d/conf")
 (init-loader-load "~/aa_files/Dropbox/data/tools/emacs")
 
+; 何故かここじゃないとうまく認識されない…
+(setq browse-url-browser-function 'browse-url-generic)
+(setq browse-url-generic-program
+(if (file-exists-p "/usr/bin/open")
+"/usr/bin/open"))
